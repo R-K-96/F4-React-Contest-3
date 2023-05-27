@@ -6,10 +6,8 @@ const Navbar =()=>{
         <nav>
            <p>Header</p>
            <div className="redirect">
-              <Link to="/signup"><span>Signup</span></Link> 
-             
-  
-              <Link to="/profile">Profile</Link>
+              <Link  to="/signup" style={{ textDecoration: 'none',color:'white'}}>Signup</Link> 
+              <Link to="/profile"  style={{ textDecoration: 'none',color:'white'}}>Profile</Link>
             </div> 
             
         </nav>

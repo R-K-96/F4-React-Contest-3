@@ -21,10 +21,10 @@ const Profile = () => {
 
   return (
     <div className='profile-container'>
-      <h1>Profile</h1>
+      <p className='heading'>Profile</p>
       {user && (
         <div>
-          <p>Full Name : {user.username}</p>
+          <p>Full Name : {user.fullName}</p>
           <p>Email : {user.email}</p>
           <p>Password : {user.password}</p>
         </div>

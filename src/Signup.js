@@ -48,7 +48,7 @@ const Signup = () => {
 
   return (
     <div className='sign-container'>
-      <h1>Signup</h1>
+      <p className='heading'>Signup</p>
       <input
         type="text"
         placeholder="Username"

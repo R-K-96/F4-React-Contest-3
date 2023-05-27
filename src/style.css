@@ -45,6 +45,7 @@ hr{
     border: none;
     border-bottom: 1px solid gray;
     padding: 4px;
+    padding-left: 10px;
     color: white;
     font-family: 'Inter', sans-serif;
 
@@ -78,5 +79,9 @@ hr{
     border: 1px solid black;
     font-family: 'Inter', sans-serif;
     margin-top: 20px;
+}
+
+.heading{
+    font-size: 32px;
 }
  
