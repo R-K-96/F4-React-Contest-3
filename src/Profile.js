@@ -20,12 +20,13 @@ const Profile = () => {
   };
 
   return (
-    <div>
+    <div className='profile-container'>
       <h1>Profile</h1>
       {user && (
         <div>
-          <p>Username: {user.username}</p>
-          <p>Access Token: {user.accessToken}</p>
+          <p>Full Name : {user.username}</p>
+          <p>Email : {user.email}</p>
+          <p>Password : {user.password}</p>
         </div>
       )}
       <button onClick={handleLogout}>Logout</button>

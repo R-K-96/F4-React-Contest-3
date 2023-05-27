@@ -5,6 +5,7 @@ import { setUser } from './actions';
 
 const Signup = () => {
   const [username, setUsername] = useState('');
+  const [email,setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
@@ -13,17 +14,18 @@ const Signup = () => {
   const navigate = useNavigate();
 
   const handleSignup = () => {
-    if (username && password && confirmPassword) {
+    if (username && email && password && confirmPassword) {
       if (password === confirmPassword) {
         const accessToken = generateAccessToken();
         const user = {
-          username,
-          password,
-          accessToken,
+          fullName :username,
+          email:email,
+          password:password,
+          accessToken: accessToken,
         };
         localStorage.setItem('user', JSON.stringify(user));
         dispatch(setUser(user));
-        setSuccessMessage('Signup successful. Redirecting to profile...');
+        setSuccessMessage('Successfully Signed Up!');
         setErrorMessage('');
         setTimeout(() => {
           navigate('/profile');
@@ -34,7 +36,7 @@ const Signup = () => {
       }
     } else {
       setSuccessMessage('');
-      setErrorMessage('Please fill in all fields.');
+      setErrorMessage('Error : All the fields are mandatory');
     }
   };
 
@@ -45,13 +47,19 @@ const Signup = () => {
   };
 
   return (
-    <div>
+    <div className='sign-container'>
       <h1>Signup</h1>
       <input
         type="text"
         placeholder="Username"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
+      />
+      <input
+        type="email"
+        placeholder="Email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
       />
       <input
         type="password"
