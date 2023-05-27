@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/F4-React-Contest-3/static/css/main.91d1ef25.css",
-    "main.js": "/F4-React-Contest-3/static/js/main.16e8639c.js",
+    "main.js": "/F4-React-Contest-3/static/js/main.28c94844.js",
     "index.html": "/F4-React-Contest-3/index.html",
     "main.91d1ef25.css.map": "/F4-React-Contest-3/static/css/main.91d1ef25.css.map",
-    "main.16e8639c.js.map": "/F4-React-Contest-3/static/js/main.16e8639c.js.map"
+    "main.28c94844.js.map": "/F4-React-Contest-3/static/js/main.28c94844.js.map"
   },
   "entrypoints": [
     "static/css/main.91d1ef25.css",
-    "static/js/main.16e8639c.js"
+    "static/js/main.28c94844.js"
   ]
 }
